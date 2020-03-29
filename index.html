@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu conteiner">
+            <img alt="logo" class="logo" src="img/logo.png ">
+            <a >Задачи</a>
+            <a href="#">Слайдер</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="conteiner">
+
+            <div class="context-page">
+                <h1>Страница с различными выполненными <br> задачами по JS</h1>
+
+            </div>
+        </div>
+    </header>
+    
+
+    <section class="gelery">
+        <div class="conteiner">
+            <div class="slydeshow-conteiner">
+                <div class="mySlides fade">
+                    <div class="numbertext">1/3</div>
+                    <img src="img/a.jpg" alt="" style="width: 100%; height: 600px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2/3</div>
+                    <img src="img/b.jpg" alt="" style="width: 100%; height: 600px">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3/3</div>
+                    <img src="img/c.jpg" alt="" style="width: 100%; height: 600px;">
+                </div>
+                <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a  class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="conteiner">
+            <div id="tabs">
+                <div class="tab whiteborder">TodoList</div>
+                <div class="tab">Бюджет</div>
+                <div class="tab">Калькулятор</div>
+                <div class="tabContent">    <section class="TodoList">
+                    <div class="conteiner">
+                        <div class="TodoList-pole">
+                        <h2>Запишите, что вы должны сегодня сделать</h2>
+                        <div class="TodoList-body">
+                            <div class="wind-todo">
+                            <input type="text" name="one" class="input-todo">
+                            <input type="submit" value="Добавить задачу" class="btn-todolist">
+                            <input type="button" value="Удалить завершенные" class="btn-rem">
+                            </div>  
+                            <ol class="tasks"></ol>
+                            </div>
+            
+                        </div>
+                    </div>
+                </section> </div>
+                <div class="tabContent">
+                    <section class="element1">
+                        <a name="element1"></a>
+                        <div class="conteiner">
+                            <div class="kapital">
+                                <h2>Расчёт бюджета на день</h2>
+                                <form class="input-kapital">
+                                    <div class="box-kapital">
+                                        <p>Бюджет на месяц</p>
+                                        <input type="text" class="kapital-month" id="kapital-month">
+                                    </div>
+                                    <div class="box-kapital">
+                                        <p>Обязательная статья расхода</p>
+                                        <input type="text" class="kapital-outlay" id="kapital-outlay">
+                                    </div>
+                                    <div class="box-kapital">
+                                        <p>Колличество дней в месяце</p>
+                                        <input type="text" class="kapital-day" id="kapital-day">
+                                    </div>
+                
+                                    <button class="kapital-calc" type="button" id="kapital-calc"> Расчёт</button>
+                                </form>
+                                <form action="" class="output-kapital" id="">
+                                    <p hidden class="output-text">Ваш бюджет на день равен:</p>
+                                    <p class="output-window" hidden></p>
+                                </form>
+                            </div>
+                        </div>
+                    </section></div>
+                <div class="tabContent"><section class="element" id="calc-page">
+                    <a name="calc"></a>
+                    <div class="conteiner">
+                        <h2 >Калькулятор для двух чисел</h2>
+                        <div class="calculator">
+                            <div class="display-calc">
+                                <input type="text" class="output-calc" id="output-calc">
+                                <button type="button" class="calc-clr">C</button>
+                            </div>
+                            <div class="keyboard-calc">
+                                <div class="calc-string">
+                                    <button class="keys">1</button>
+                                    <button class="keys">2</button>
+                                    <button class="keys">3</button>
+                                    <button class="operatory-calc ">+</button>
+                                </div>
+                                <div class="calc-string">
+                                    <button class="keys">4</button>
+                                    <button class="keys">5</button>
+                                    <button class="keys">6</button>
+                                    <button class="operatory-calc ">-</button>
+                                </div>
+                                <div class="calc-string">
+                                    <button class="keys">7</button>
+                                    <button class="keys">8</button>
+                                    <button class="keys">9</button>
+                                    <button class="operatory-calc ">*</button>
+                                </div>
+                                <div class="calc-string">
+                                    <button class="point keys">.</button>
+                                    <button class="keys">0</button>
+                                    <button class="operatory-calc ">/</button>
+                                    <button class="operatory-calc ">=</button>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+            
+            
+            </div>
+
+            </div>
+        </div>
+    </section>
+  <footer>
+          <div class="contact">
+              <div class="">
+                <a href="+375333048213" style=" margin-bottom: 10px;">+375333048213</a><br>
+                <a href="https://www.Pasharodaks@gmail.com" >Pasharodaks@gmail.com</a>
+            </div>
+            <div class="">
+                <a href="https://vk.com/rodak_pasha" class="social-link"><img src="img/vk.jpg"></a>
+                <a href="https://www.instagram.com/r_e_d_e_f_i_n_i_n_g/" class="social-link"><img src="img/inst.png"> </a>
+            </div>
+
+          </div>
+  </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+</html>

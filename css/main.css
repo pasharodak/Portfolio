@@ -1,0 +1,286 @@
+
+*{
+    margin: 0;
+}
+body{
+    background: linear-gradient(to bottom,  rgb(133, 109, 109),40%,rgb(69, 75, 69), 80%,  rgb(13, 13, 15));
+}
+.conteiner{
+    width: 900px;
+    margin: auto;   
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    height: 10vh;
+    position: sticky;
+    top:0;
+    align-items: initial ;
+
+    /*background-color: rebeccapurple;*/
+}
+.logo{
+    align-items: flex-start;
+    height: 45px;
+}
+h1{
+    color: cornsilk;
+    text-align: center;
+}
+.menu a{
+    flex-grow: 1;
+    text-decoration: none;
+    outline-color: blue;
+    outline-width: 1;
+    padding: 10px;
+    background-color: darkslategray;
+    color: floralwhite;
+    height: 25px;
+    margin:0;
+    cursor: pointer;
+    text-align: center;
+}
+menu a:hover{
+    background-color: rgb(25, 119, 119); 
+    color: blue;  
+
+
+}
+h2{
+    margin: 0;
+    color: white;
+    margin-bottom: 140px;
+    margin-top: 20px;
+}
+.calculator{
+    width: 200px;
+    margin: auto;
+}
+.display-calc{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.output-calc{
+    width: 160px;
+    height: 40px;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: rgb(27, 25, 23);
+    outline: none;
+    color: cornsilk;
+}
+.calc-clr{
+    margin-left: 0px;
+}
+.calc-string{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.keys, .operatory-calc, .point, .calc-clr{
+    outline: none;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(129, 119, 116);
+    font-size: 14px;
+}
+
+.kapital{
+    display: flex;
+    justify-content:space-between ;
+    flex-direction: column;
+}
+
+.kapital h2{
+    align-self: flex-start;
+}
+.box-kapital input{
+    background-color: darkgrey;
+    color: white;
+    height: 30px;
+    
+}
+
+.box-kapital p{
+    color: white;
+    font-size: 20px;
+}
+.output-kapital p{
+    color: white;
+    font-size: 20px;
+}
+.input-kapital{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+}
+.kapital-calc{
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+
+.TodoList-pole{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.TodoList-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.input-todo{
+    width: 300px;
+    background-color: darkgrey;
+    color: white;
+    height: 30px;
+
+}
+.btn-todolist, .btn-rem{
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+}
+.wind-todo{
+    display: flex;
+    justify-content: center;   
+}
+.tasks{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: inherit;
+    
+}
+.checkList{
+    margin-inline-start: auto;
+    margin-bottom: 10PX;
+}
+
+
+
+
+#tabs .tab{
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+#tabs .whiteborder{
+    border: 1px solid #707070;
+    border-bottom: 1px solid #FFFF;
+    border-radius: 3px 3px 0 0;
+}
+
+/*#tabs .tabContent{
+    width: 300px;
+    height: 60px;
+    border: 1px solid #707070;
+    position: relative;
+    top: -1px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+
+}*/
+
+#tabs .hide{
+    display: none;
+}
+#tabs .show{
+    display: blocks;
+}
+
+
+
+
+/*gelery*/
+.slydeshow-conteiner{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    max-height: 600px;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: wheat;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: black;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.text{
+
+}
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-direction: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity:.4}
+    to{opacity: 1}
+}
+@-webkit-keyframes fade{
+    from{opacity: .4 }
+    to{opacity: 1}
+}
+.contact{
+    width: 900px;
+    margin: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(68, 65, 65);
+    padding: 20px;
+}
